@@ -50,4 +50,11 @@ insert into taxUser(INN,FIO,gender,bitrday,phone,type_taxUser,document,serial_an
 insert into taxUser(INN,FIO,gender,bitrday,phone,type_taxUser,document,serial_and_number,data_get,Who_get,cod,adress) values ('7743013943', 'Иванова Марина Ивановна','Женский', '1999-08-14', '89001237932', 'Физическое лицо', 'Паспорт РФ', 031925064, '2018-09-17', 'ГУ МВД', 30019,'615597, Саратовская область, город Балашиха, наб. Балканская, 94')
 
 insert into taxUser(INN,FIO,gender,bitrday,phone,type_taxUser,document,serial_and_number,data_get,Who_get,cod,adress) values ('7743013957', 'Иванов Петр Генадьевич','Мужской', '1999-07-20', '89001237932', 'Физическое лицо', 'Паспорт РФ', 031925034, '2017-10-10', 'ГУ МВД', 40019,'899407, Сахалинская область, город Можайск, въезд Славы, 84')
+
+create table aut_tax(
+ id_taxAyt int IDENTITY(1,1) not null,
+ login nvarchar(60) not null,
+ password nvarchar(60) not null,
+);
+insert aut_tax(login,password) values('Tax4', 'tax4');
 ```
